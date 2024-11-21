@@ -12,13 +12,13 @@ class Square:
     """
 
 
-   def __init__(self, size):
-       """Constructor method
+    def __init__(self, size):
+        """Constructor method
 
 
-       Arg:
-           size (int): The size value of private attribut (default value = 0)
+        Arg:
+            size (int): The size value of private attribut (default value = 0)
 
 
-       """
-       __size = size
+        """
+        __size = size
