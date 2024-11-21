@@ -3,6 +3,8 @@
 
 
 """
+
+
 class Square:
     """This class is an empty class
 
