@@ -4,3 +4,4 @@ def print_last_digit(number):
     if number < 0:
         lastDigit = lastDigit * -1
     print("{}".format(lastDigit), end='')
+    return lastDigit
