@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-"""module : 0. My first square"""
+"""module : 0. My first square
+
+
+"""
 class Square:
-    """This class is an empty class"""
+    """This class is an empty class
+
+
+    """
     pass
