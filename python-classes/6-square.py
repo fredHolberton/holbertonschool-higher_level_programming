@@ -4,7 +4,7 @@
 
 class Square:
     """This class allows to value a private property size"""
-    def __init__(self, size=0, position(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Constructor method"""
         self.size = size
         self.position = position
@@ -29,6 +29,7 @@ class Square:
             self.__size = value
 
     def my_print(self):
+        """method for print square in position"""
         if self.size == 0:
             print("")
         else:
