@@ -6,22 +6,19 @@ class Square:
     """This class allows to value a private property size"""
     def __init__(self, size=0):
         """Constructor method"""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.size = size
 
     def area(self):
         """Method area : calculate and return the area of the square"""
         return self.__size ** 2
 
+    @property
     def size(self):
         """Method to get the size value"""
         return self.__size
 
-    def size(self,value):
+    @size.setter
+    def size(self, value):
         """Method to set the size value"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -29,4 +26,3 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-
