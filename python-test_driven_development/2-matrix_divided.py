@@ -2,6 +2,8 @@
 """ Module : 1. Divide a matrix """
 
 def matrix_divided(matrix, div):
+    """method witch divide each element of a matrix of lists and
+    return a new matrix"""
     # Vérification de la variable matrix
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
