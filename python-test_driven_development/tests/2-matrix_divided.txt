@@ -7,6 +7,9 @@
 >>> matrix_divided([[3]], 3)
 [[1.0]]
 
+>>> matrix_divided([[3, 9], [12, 15]], float('inf'))
+[[0.0, 0.0], [0.0, 0.0]]
+
 >>> matrix_divided([[3, 9], [12, 15]], 0)
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
