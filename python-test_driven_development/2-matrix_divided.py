@@ -1,20 +1,21 @@
 #!/usr/bin/python3
 """ Module : 1. Divide a matrix """
 
+
 def matrix_divided(matrix, div):
-    """method witch divide each element of a matrix of lists and
-    return a new matrix"""
+    """method witch divide each element of a matrix"""
     # Vérification de la variable matrix
+    msgTypeError = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(msgTypeError)
     else:
         for listOfMatrix in matrix:
             if not isinstance(listOfMatrix, list):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(msgTypeError)
             else:
                 for elementOfList in listOfMatrix:
                     if not isinstance(elementOfList, (int, float)):
-                        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                        raise TypeError(msgTypeError)
     # Vérification de la taille de chaque élement de la matrix
     sizeOfRow = len(matrix[0])
     for elementOfMatrix in range(1, len(matrix)):
