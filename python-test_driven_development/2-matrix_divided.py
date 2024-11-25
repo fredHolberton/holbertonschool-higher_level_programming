@@ -32,6 +32,6 @@ def matrix_divided(matrix, div):
         newListOfMatrix = []
         for elementOfList in listOfMatrix:
             newElementOfList = "%.2f" % (elementOfList / div)
-            newListOfMatrix.append(newElementOfList)
+            newListOfMatrix.append(float(newElementOfList))
         newMatrix.append(newListOfMatrix)
     return newMatrix
