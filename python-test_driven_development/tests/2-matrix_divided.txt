@@ -2,10 +2,10 @@
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 >>> matrix_divided([[3, 9], [12, 15]], -3)
-[[-1.00, -3.00], [-4.00, -5.00]]
+[[-1.0, -3.0], [-4.0, -5.0]]
 
 >>> matrix_divided([[3]], 3)
-[[1.00]]
+[[1.0]]
 
 >>> matrix_divided([[3, 9], [12, 15]], 0)
 Traceback (most recent call last):
